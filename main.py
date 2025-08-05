@@ -41,20 +41,17 @@ class Bank:
         interest = (self.balance * rate * time) / 100
         print(f"Interest on Rs.{self.balance} at {rate}% for {time} years is Rs.{interest}")
         return interest
-
-# --- Using the class with multiple accounts ---
-
 bank_accounts = []
 
-# Creating two sample accounts
+# Create the sample accounts
 vishal = Bank("Vishal", 12345, 2000, "pass123")
 Amit = Bank("Amit", 67890, 5000, "abc123")
 
-# Add to the list
+# Add accounts in the list
 bank_accounts.append(vishal)
 bank_accounts.append(Amit)
 
-# Do some operations on Vishal's account
+# operations on the vishal account
 vishal.deposit(1500)
 vishal.withdraw(1000)
 vishal.calculate_interest(5, 2)
